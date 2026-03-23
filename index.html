@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a style="margin-left: 480px;font-size: 35px;font-weight: bold; color: brown;" class="navbar-brand" href="#"><img width="150px" height="150px"
+                    src="https://images.seeklogo.com/logo-png/16/2/porsche-logo-png_seeklogo-168544.png" alt="">Hakurai
+                Super Car System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slide -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active w-50 h-50">
+                <img src="https://file.aiquickdraw.com/imgcompressed/img/compressed_b3409ad578a0a168a1cef8a39cfea7dd.webp"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item w-50 h-50">
+                <img src="https://file.aiquickdraw.com/imgcompressed/img/compressed_b3409ad578a0a168a1cef8a39cfea7dd.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item w-50 h-50">
+                <img src="https://file.aiquickdraw.com/imgcompressed/img/compressed_b3409ad578a0a168a1cef8a39cfea7dd.webp" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary ms-5" data-bs-toggle="modal" data-bs-target="#CarsModal">
+        Goo to add Cars
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="CarsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="p-3">
+                        <input id="txtImage" type="text" placeholder="Enter Image Address" class="form-control">
+                    </div>
+                    <div class="p-3">
+                        <input id="txtBrand" type="text" placeholder="Enter Brand" class="form-control">
+                    </div>
+                    <div class="p-3">
+                        <input id="txtPrice" type="text" placeholder="Enter Price" class="form-control">
+                    </div>
+                    <div class="p-3">
+                        <input id="txtName" type="text" placeholder="Enter Name" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button onclick="Add()" type="button" class="btn btn-primary">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!-- Card -->
+    <div class="container">
+        <div id="Datas" class="row d-flex">
+            
+        </div>
+        </div>
+    </div>
+    <br><br>
+    <script src="main.js"></script>
+</body>
+
+</html>
